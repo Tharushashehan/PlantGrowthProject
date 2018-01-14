@@ -120,6 +120,8 @@
     <Content Include="PlantGrowthProject\static\scripts\material.min.js" />
     <Content Include="PlantGrowthProject\static\scripts\perfect-scrollbar.jquery.min.js" />
     <Content Include="PlantGrowthProject\static\scripts\Report_02.js" />
+    <Content Include="PlantGrowthProject\static\scripts\Report_03.js" />
+    <Content Include="PlantGrowthProject\templates\Report03.html" />
     <Content Include="PlantGrowthProject\templates\Test.html" />
     <Content Include="PlantGrowthProject\templates\Report_02.html" />
     <Content Include="requirements.txt" />
