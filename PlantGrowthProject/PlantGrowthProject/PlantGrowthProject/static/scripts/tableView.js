@@ -26,6 +26,7 @@ function getData() {
 var dataDeferred = getData();
 var DataLabels = [];
 var DataArray = [];
+var TableArry = [];
 
 function checkAjaxStatuses() {
     var pending = [];
@@ -57,8 +58,31 @@ $.when(dataDeferred).done(function (data) {
         DataArray.push(DataItem);
         var LabelItem = "Image " + i;
         DataLabels.push(LabelItem);
+        var whitePixl = data.nAllPixelArrylst[i] - data.nBlackPixelArrylst[i]
+        TableArry.push([LabelItem,data.nAllPixelArrylst[i], data.nBlackPixelArrylst[i], whitePixl]);
     }
-    $('#myTable').DataTable({
-        ordering: true
-    });
+    LoadChart();
 });
+
+function LoadChart() {
+ var table = $('#myTable').DataTable({
+        ordering: true
+ });
+
+ table.rows.add(TableArry).draw();
+
+ //table.rows.add([{
+ //    "header01": "Tiger Nixon",
+ //    "header02": "System Architect",
+ //    "header03": "$3,120",
+ //    "header04": "2011/04/25"
+
+ //}, {
+ //    "header01": "Garrett Winters",
+ //    "header02": "Director",
+ //    "header03": "$5,300",
+ //    "header04": "2011/07/25"
+
+ //}]).draw();
+
+};
