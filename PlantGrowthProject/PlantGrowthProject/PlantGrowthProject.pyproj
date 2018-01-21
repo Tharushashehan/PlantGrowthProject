@@ -70,6 +70,7 @@
     <Content Include="PlantGrowthProject\static\images\sidebar-4.jpg" />
     <Content Include="PlantGrowthProject\static\images\tim_80x80.png" />
     <Content Include="PlantGrowthProject\static\sass\font-awesome.min.css" />
+    <Content Include="PlantGrowthProject\static\sass\jquery.dataTables.min.css" />
     <Content Include="PlantGrowthProject\static\sass\Material+Icons.css" />
     <Content Include="PlantGrowthProject\static\sass\material-dashboard.scss" />
     <Content Include="PlantGrowthProject\static\sass\md\mixins\_chartist.scss" />
@@ -115,13 +116,16 @@
     <Content Include="PlantGrowthProject\static\scripts\contact.js" />
     <Content Include="PlantGrowthProject\static\scripts\demo.js" />
     <Content Include="PlantGrowthProject\static\scripts\jquery-3.2.1.min.js" />
+    <Content Include="PlantGrowthProject\static\scripts\jquery.dataTables.min.js" />
     <Content Include="PlantGrowthProject\static\scripts\Login.js" />
     <Content Include="PlantGrowthProject\static\scripts\material-dashboard.js" />
     <Content Include="PlantGrowthProject\static\scripts\material.min.js" />
     <Content Include="PlantGrowthProject\static\scripts\perfect-scrollbar.jquery.min.js" />
     <Content Include="PlantGrowthProject\static\scripts\Report_02.js" />
     <Content Include="PlantGrowthProject\static\scripts\Report_03.js" />
+    <Content Include="PlantGrowthProject\static\scripts\tableView.js" />
     <Content Include="PlantGrowthProject\templates\Report03.html" />
+    <Content Include="PlantGrowthProject\templates\tableView.html" />
     <Content Include="PlantGrowthProject\templates\Test.html" />
     <Content Include="PlantGrowthProject\templates\Report_02.html" />
     <Content Include="requirements.txt" />

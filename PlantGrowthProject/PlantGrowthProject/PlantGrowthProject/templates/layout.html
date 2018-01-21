@@ -22,6 +22,7 @@
     <!--     Fonts and icons     -->
     <link href="../static/sass/font-awesome.min.css" rel="stylesheet" />
     <link href="../static/sass/Material+Icons.css" rel="stylesheet" />
+    <link href="../static/sass/jquery.dataTables.min.css" rel="stylesheet"/>
 </head>
 
 <body>
@@ -61,7 +62,13 @@
                     <li>
                         <a href="{{ url_for('Report_03') }}">
                             <i class="material-icons">library_books</i>
-                            <p>Report 03 (Jseg)</p>
+                            <p>Speed go</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{{ url_for('tableView') }}">
+                            <i class="material-icons">library_books</i>
+                            <p>Data table</p>
                         </a>
                     </li>
                 </ul>

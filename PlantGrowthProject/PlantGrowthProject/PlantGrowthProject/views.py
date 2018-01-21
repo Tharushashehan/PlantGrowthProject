@@ -39,6 +39,7 @@ def contact():
         message='Your contact page.'
     )
     
+    
 @app.route('/about')
 def about():
     """Renders the about page."""
@@ -69,6 +70,17 @@ def Report_03():
         message='Your application description page.'
     )
 
+@app.route('/tableView')
+def tableView():
+    """Renders the tableView page."""
+    return render_template(
+        'tableView.html',
+        title='tableView',
+        year=datetime.now().year,
+        message='Your application description page.'
+    )
+
+
 @app.route('/ajax', methods =  ['GET', 'POST'])
 def ajax() :
     clssToCall = ClsCompromise()
@@ -84,6 +96,12 @@ def Compromise():
      if request.method == 'POST':
         clssToCall = ClsCompromise()
         return clssToCall.Comp03()
+
+@app.route('/ExampleUploader' , methods = ['GET', 'POST'])
+def ExampleCompromise():
+     if request.method == 'POST':
+        clssToCall = ClsCompromise()
+        return clssToCall.Compromise()
 
 if __name__ == '__main__':
     app.run(port=50000, debug=True)

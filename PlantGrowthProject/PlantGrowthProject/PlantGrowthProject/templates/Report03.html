@@ -4,43 +4,68 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
 </head>
+
 <body>
     <div>
-        <h3>Here you can see the system generated graph on plant growth</h3>
-        <p><i>Here let X axis be # of images and let Y axis be the growth Area in CM x CM</i></p>
+        <h3>Here you upload example image to check the output step by step</h3>
     </div>
     <div>
-        <h3>Your report</h3>
-        <canvas id="myChart" width="40" height="40"></canvas>
-    </div>
+        <!--<h2>{{ title }}.</h2>
+        <h3>{{ message }}</h3>-->
+        <style>
+            .thumb {
+                height: 75px;
+                border: 1px solid #000;
+                margin: 10px 5px 0 0;
+            }
+        </style>
 
-    <!--Error Modal -->
-    <div class="modal fade" id="myModal" role="dialog">
-        <div class="modal-dialog">
-
-            <!-- Modal content-->
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    <h4 class="modal-title">Error Occur</h4>
-                </div>
-                <div class="modal-body">
-                    <p>Please Check the connection</p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                </div>
+        <form id="Upload_Form" action="http://localhost:50000/ExampleUploader" method="POST"
+              enctype="multipart/form-data">
+            <div class="col-md-12">
+                <table width="100%">
+                    <tbody>
+                        <tr>
+                            <td>
+                                <input class="btn-small btn btn-xs btn-default" type="file" id="files" name="file" accept="image/*" />
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
-        </div>
+            <!--<input type="file" id="files" name="files[]" multiple />-->
+            <div class="col-md-12">
+                <table width="100%">
+                    <tbody>
+                        <tr>
+                            <td>
+                                <output id="list"></output>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-md-12">
+                <table width="100%">
+                    <tbody>
+                        <tr>
+                            <td>
+                                <input class="btn-small btn btn-xs btn-default" type="submit" value="Upload" />
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </form>
+
+        <!--<input type="file" id="files" name="files[]" multiple />
+        <output id="list"></output>-->
+
+
     </div>
-    <!--Java Script links-->
     <script src="../static/scripts/jquery-3.2.1.min.js"></script>
-    <script src="../static/scripts/Chart.bundle.min.js"></script>
-    <script src="../static/scripts/Chart.min.js"></script>
     <script src="../static/scripts/Report_03.js"></script>
 </body>
 </html>
-
     {% endblock %}
