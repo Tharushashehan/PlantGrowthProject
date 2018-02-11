@@ -183,7 +183,7 @@ class ClsCompromise:
             numberAll = frame.size #this gives number of all pixels you have in the image
 
             nWhitePixels = numberAll - nBlackPixel
-            nBlackPixelArrylst.append(nWhitePixels) #here after the mask been added region with green color has become the color of white
+            nBlackPixelArrylst.append(nBlackPixel) #here after the mask been added region with green color has become the color of white
             nAllPixelArrylst.append(numberAll)
 
             #cv2.imshow("images", thresh)
@@ -299,7 +299,7 @@ class ClsCompromise:
                 numberAll = frame.size #this gives number of all pixels you have in the image
 
                 nWhitePixels = numberAll - nBlackPixel
-                nBlackPixelArrylst.append(nWhitePixels) #here after the mask been added region with green color has become the color of white
+                nBlackPixelArrylst.append(nBlackPixel) #here after the mask been added region with green color has become the color of white
                 nAllPixelArrylst.append(numberAll)
 
                 #cv2.imshow("images", thresh)
